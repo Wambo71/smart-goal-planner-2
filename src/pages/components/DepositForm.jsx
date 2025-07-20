@@ -12,8 +12,9 @@ function DepositForm({ goal, onDeposit }) {
   const handleSubmit = (e) => {
     e.preventDefault()
 
+   const depositAmount = Number (amount)
 
-    const NewSavedAmount = (goal.SavedAmount) + (amount)
+    const NewSavedAmount = Number(goal.savedAmount) + depositAmount
 
      fetch(`${API_URL}/${goal.id}`, {
       method: "PATCH",
@@ -29,10 +30,11 @@ function DepositForm({ goal, onDeposit }) {
       })
     }
 
+    
        return (
-          <form onChange={handleSubmit}> 
+          <form onSubmit={handleSubmit}> 
              <input type="number" value={amount} onChange={handleChange} placeholder="Enter Amount" />
-             <button type="Subit">Deposit</button>
+             <button type="submit">Deposit</button>
           </form>
        )    
 

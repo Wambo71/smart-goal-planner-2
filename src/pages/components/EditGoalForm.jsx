@@ -33,7 +33,7 @@ const EditGoalForm = ({ goal, onUpdate }) => {
   };
 
   return (
-    <>
+    
       <div>
         <form onSubmit={handleSubmit}>
           <label htmlFor="Name"></label>
@@ -55,7 +55,7 @@ const EditGoalForm = ({ goal, onUpdate }) => {
           <button type="submit">Update Goal</button>
         </form>
       </div>
-    </>
+    
   );
 }
 

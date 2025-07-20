@@ -5,8 +5,11 @@ import Home from "./pages/components/Home";
 import Dashboard from "./layout/Dashboard";
 import DepositForm from "./pages/components/DepositForm";
 import NavBar from "./pages/components/NavBar";
+import GoalList from "./pages/components/GoalList"; 
 
 function App(){
+
+  
   return(
     <>
     <NavBar>
@@ -20,8 +23,15 @@ function App(){
       </Routes>
     </NavBar>
    
-    
+    <div>
+      <h1>My Goal</h1>
+      <GoalTracker  />
+      <AddGoalForm/>
+      <GoalList/>
+      <DepositForm />
+    </div>
     </>
+    
   )
 }
 export default App

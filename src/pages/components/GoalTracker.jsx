@@ -3,17 +3,23 @@
 import React from 'react'
 
 const GoalTracker = ({goal}) => {
+
+  if (!goal) {
+    return <p>No goal data available</p>
+  }
+    const { name, savedAmount, targetAmount } = goal
     const saved = goal.savedAmount
     const target = goal.targetAmount
-    const remainig = target - saved
-    const percentage = (saved / target) * 100;
+    const remaining = targetAmount- savedAmount
+    const percentage =(savedAmount / targetAmount) * 100
 
   return (
     <div>
-        <h2>{goal.name}</h2>
+        <h2>{name}</h2>
         <p>Saved Amount: {saved}</p>
-        <p>Remaining Amount: {remainig}</p>
-        <p>percentage: {percentage}</p>
+        <p>Remaining Amount: {remaining}</p>
+       <p>Percentage:{percentage}%</p>
+
 
     </div>
   )
