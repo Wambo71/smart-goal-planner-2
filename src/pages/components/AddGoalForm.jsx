@@ -52,8 +52,8 @@ const AddGoalForm = () => {
          
       return (
     <>
-        
         <div>
+            <h2>Add Goal</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="Name"></label>
                 <input type="text" value={formData.name} name="name" onChange={handleChange} placeholder="Enter Name"/>
