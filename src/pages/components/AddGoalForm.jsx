@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 
 
+
+
 const API_URL = "http://localhost:3000/goals"
 
 
@@ -52,8 +54,8 @@ const AddGoalForm = () => {
          
       return (
     <>
-        <div>
-            <h2>Add Goal</h2>
+        <div >
+            <h2 className="heading">Add Goal</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="Name"></label>
                 <input type="text" value={formData.name} name="name" onChange={handleChange} placeholder="Enter Name"/>
@@ -76,7 +78,7 @@ const AddGoalForm = () => {
                      <br />   
                 <label htmlFor="Created At">CreatedAt</label> 
                 <input type="date" value={formData.createdAt}  name="createdAt" onChange={handleChange} placeholder="Enter Created At" />    
-                <button type="Submit">Add goal</button>  
+                <button type="Submit" className="button">Add goal</button>  
             </form>
 
         </div>

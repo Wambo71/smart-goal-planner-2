@@ -52,7 +52,7 @@ const EditGoalForm = ({ goal, onUpdate }) => {
             <input type="date" value={formData.deadline} name="deadline" onChange={handleChange} placeholder="Enter Deadline" />
                    
 
-          <button type="submit">Update Goal</button>
+          <button type="submit" className="button">Update Goal</button>
         </form>
       </div>
     

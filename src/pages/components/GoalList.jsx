@@ -25,7 +25,7 @@ const GoalList = () => {
 
   return (
      <div>
-        <h2>Savings Goals</h2>
+        <h2 className="heading"> Savings Goals</h2>
         {goals.map((goal) => (<GoalTracker key={goal.id} goal={goal} />))}
 
         <h3>Deposit  Goal</h3>

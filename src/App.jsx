@@ -6,29 +6,34 @@ import Dashboard from "./layout/Dashboard";
 import DepositForm from "./pages/components/DepositForm";
 import NavBar from "./pages/components/NavBar";
 import GoalList from "./pages/components/GoalList"; 
+import "./App.css";
+
 
 function App(){
 
   
   return(
+    
     <>
-    <NavBar>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Dashboard" element={<Dashboard />}>
-          <Route path="GoalTracker" element={<GoalTracker />} />
-          <Route path="Deposit" element={<DepositForm />} />
-          <Route path="AddGoalForm" element={<AddGoalForm />} />
-        </Route>
-      </Routes>
-    </NavBar>
-   
-    <div>
-      <h1>My Goal</h1>
-      <GoalTracker  />
-      <AddGoalForm/>
-      <GoalList/>
-      <DepositForm />
+      <NavBar/>
+        <div className="app-container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Dashboard" element={<Dashboard />}>
+            <Route path="GoalTracker" element={<GoalTracker />} />
+            <Route path="Deposit" element={<DepositForm />} />
+            <Route path="AddGoalForm" element={<AddGoalForm />} />
+          </Route>
+        </Routes>
+      
+      
+        <main className="main-content">
+          <h1 className="heading">My Goal</h1>
+          <GoalTracker  />
+         
+          <GoalList/>
+          <DepositForm />
+        </main>
     </div>
     </>
     

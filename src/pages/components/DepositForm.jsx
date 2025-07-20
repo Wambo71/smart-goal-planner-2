@@ -34,7 +34,7 @@ function DepositForm({ goal, onDeposit }) {
        return (
           <form onSubmit={handleSubmit}> 
              <input type="number" value={amount} onChange={handleChange} placeholder="Enter Amount" />
-             <button type="submit">Deposit</button>
+             <button type="submit" className="button">Deposit</button>
           </form>
        )    
 
