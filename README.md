@@ -1,13 +1,53 @@
-# React + Vite
+### SMART GOAL PLANNER
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and user-friendly React app for planning, tracking, and managing financial goals. Users can add, update, and deposit towards their goals. Data is managed using a mock REST API via JSON Server
 
-Currently, two official plugins are available:
+### FEATURES
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Add new financial goals
+-view and track goals
+-Make deposits to goals
+-Json server backend for saving goal data
+-styled using CSS
 
-## Expanding the ESLint configuration
+### Built with
+ -React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# smart-goal-planner-2
+ -React Router
+
+ -JSON Server
+
+ -JavaScript (ES6+)
+
+ -HTML & CSS
+
+ ### Getting started
+ ### 1. Install dependencies
+  -npm install
+### 2. Staart JSON server
+  -Make sure you have db.json file in the root folder:
+  ### 3.Run JSON server
+  -npx json-server --watch db.json --port 3001
+  ### 4.Start the react app
+    -npm run dev
+
+### Sample Json data(db.json)
+  -{
+  "goals": [
+    {
+      "id": 1,
+      "name": "Save for a Laptop",
+      "targetAmount": 600,
+      "currentAmount": 200,
+      "category": "Technology",
+      "deadline": "2025-12-01",
+      "createdAt": "2025-07-20"
+    }
+  ]
+}
+### License
+  This project is open-source and available under the MIT License.
+
+  ### Author
+
+  Wambui Karanja, 2025
