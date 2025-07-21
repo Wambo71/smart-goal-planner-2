@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router'
-
+// NavBar component to provide navigation links
 function NavBar() {
   return (
     <nav>
@@ -16,6 +16,9 @@ function NavBar() {
         </li>
         <li>
           <NavLink to="/Dashboard/AddGoalForm">Add Goal</NavLink>
+        </li>
+        <li>
+          <NavLink to ="/Dashboard/overview">Overview</NavLink>
         </li>
       </ul>
     </nav>

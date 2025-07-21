@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const API_URL = "http://localhost:3000/goals";
-
+// EditGoalForm component to handle editing existing goals
 const EditGoalForm = ({ goal, onUpdate }) => {
   const [formData, setFormData] = useState({
     name: goal.name,
@@ -10,14 +10,15 @@ const EditGoalForm = ({ goal, onUpdate }) => {
     deadline: goal.deadline,
    
   });
-
+// Handle input changes
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
-
+// Handle form submission
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent page reload
 
+    // Update the goal object
     fetch(`${API_URL}/${goal.id}`, {
       method: "PATCH",
       headers: {
@@ -31,7 +32,7 @@ const EditGoalForm = ({ goal, onUpdate }) => {
         onUpdate(data);
       });
   };
-
+// Render the form for editing an existing goal
   return (
     
       <div>

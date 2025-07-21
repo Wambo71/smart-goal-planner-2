@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet, NavLink } from "react-router-dom";
 
-
+ // Dashboard component to render the navigation and content
 function Dashboard(){
    return(
     <>

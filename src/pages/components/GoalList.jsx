@@ -4,7 +4,7 @@ import DepositForm from "./DepositForm"
 
 const API_URL = "http://localhost:3000/goals"
 
-
+// GoalList component to display all goals and handle deposits
 
 const GoalList = () => {
     const [goals, setGoals] = useState([])
@@ -22,7 +22,7 @@ const GoalList = () => {
     )
     setGoals(updatedGoals)
   }
-
+// Render the list of goals and deposit forms
   return (
      <div>
         <h2 className="heading"> Savings Goals</h2>

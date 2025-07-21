@@ -6,7 +6,7 @@ import React, { useState } from "react";
 
 const API_URL = "http://localhost:3000/goals"
 
-
+// AddGoalForm component to handle adding new goals
 const AddGoalForm = () => {
 
     const [formData,setFormData] = useState ({
@@ -24,10 +24,11 @@ const AddGoalForm = () => {
        return{...prev,[e.target.name]:e.target.value} 
      
       })}
-
+// handle form submission
       const handleSubmit = (e)=>{
-           e.preventDefault()
+           e.preventDefault() //prevent page reload
 
+           // Create a new goal object
            fetch(API_URL,{
                        
             method: "POST",
@@ -51,7 +52,7 @@ const AddGoalForm = () => {
             
       }
        
-         
+         // Render the form for adding a new goal
       return (
     <>
         <div >
