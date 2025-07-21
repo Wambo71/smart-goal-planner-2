@@ -18,7 +18,7 @@ const GoalTracker = ({goal}) => {
         <h2>{name}</h2>
         <p>Saved Amount: {saved}</p>
         <p>Remaining Amount: {remaining}</p>
-       <p>Percentage:{percentage}%</p>
+       <p>Progress:{percentage}%</p>
 
 
     </div>

@@ -10,6 +10,12 @@ import "./App.css";
 
 
 function App(){
+  const goal={
+    name: "My Savings Goal",
+    savedAmount: 5000,
+    targetAmount: 10000
+
+  }
 
   
   return(
@@ -20,21 +26,15 @@ function App(){
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Dashboard" element={<Dashboard />}>
-            <Route path="GoalTracker" element={<GoalTracker />} />
+            <Route path="GoalTracker" element={<GoalTracker goal={goal} />} />
             <Route path="Deposit" element={<DepositForm />} />
             <Route path="AddGoalForm" element={<AddGoalForm />} />
+            
           </Route>
         </Routes>
-      
-      
-        <main className="main-content">
-          <h1 className="heading">My Goal</h1>
-          <GoalTracker  />
-         
-          <GoalList/>
-          <DepositForm />
-        </main>
-    </div>
+        <GoalList />
+        
+        </div>
     </>
     
   )

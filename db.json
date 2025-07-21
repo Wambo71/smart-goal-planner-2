@@ -89,24 +89,7 @@
       "category": "Home",
       "deadline": "2025-03-31",
       "createdAt": "2024-05-15"
-    },
-    {
-      "id": "7425",
-      "name": "wambui",
-      "targetAmount": "122",
-      "savedAmount": "34",
-      "category": "jkl",
-      "deadline": "",
-      "createdAt": ""
-    },
-    {
-      "id": "0c10",
-      "name": "wambui",
-      "targetAmount": "123",
-      "savedAmount": "34",
-      "category": "yty",
-      "deadline": "2025-08-02",
-      "createdAt": "1234-09-03"
     }
+    
   ]
 }
