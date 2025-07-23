@@ -25,7 +25,7 @@ const GoalList = () => {
 // Render the list of goals and deposit forms
   return (
      <div>
-        <h2 className="heading"> Savings Goals</h2>
+        <h2 className="heading"> Goals progress</h2>
         {goals.map((goal) => (<GoalTracker key={goal.id} goal={goal} />))}
 
         <h3>Deposit  Goal</h3>
