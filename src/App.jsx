@@ -28,6 +28,7 @@ function App() {
     <>
       <NavBar />
       <div className="app-container">
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Dashboard" element={<Dashboard />}>

@@ -3,22 +3,22 @@ import { NavLink } from 'react-router'
 // NavBar component to provide navigation links
 function NavBar() {
   return (
-    <nav>
-      <ul>
+    <nav className='navbar'>
+      <ul className='navbar-links'>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" className="nav-link">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/Dashboard/GoalTracker">Goal Tracker</NavLink>
+          <NavLink to="/Dashboard/GoalTracker" className="nav-link">Goal Tracker</NavLink>
         </li>
         <li>
-          <NavLink to="/Dashboard/Deposit">Deposit</NavLink>
+          <NavLink to="/Dashboard/Deposit" className="nav-link">Deposit</NavLink>
         </li>
         <li>
-          <NavLink to="/Dashboard/AddGoalForm">Add Goal</NavLink>
+          <NavLink to="/Dashboard/AddGoalForm" className="nav-link">Add Goal</NavLink>
         </li>
         <li>
-          <NavLink to ="/Dashboard/overview">Overview</NavLink>
+          <NavLink to ="/Dashboard/overview" className="nav-link">Overview</NavLink>
         </li>
       </ul>
     </nav>

@@ -7,7 +7,8 @@ const Overview = ({goals}) => {
     const totalSaved = selectedGoals.reduce((sum, goal) => sum + goal.savedAmount, 0);
     const completedGoals = selectedGoals.filter(goal=> goal.savedAmount >= goal.targetAmount).length;
   return (
-      <div>
+      <div className='overview-container'>
+      
       <h2>Overview (Selected Goals)</h2>
       <p>Total Goals: {totalGoals}</p>
       <p>Total Saved: Ksh {totalSaved}</p>

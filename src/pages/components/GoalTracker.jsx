@@ -15,7 +15,7 @@ const GoalTracker = ({goal}) => {
     const percentage =(savedAmount / targetAmount) * 100
 
   return ( // Render the goal details
-    <div>
+    <div className='goal-card'>
         <h2>{name}</h2>
         <p>Saved Amount: {saved}</p>
         <p>Remaining Amount: {remaining}</p>
